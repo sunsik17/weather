@@ -20,14 +20,13 @@ public class SwaggerConfig {
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.zerobase.weather"))
                 .paths(PathSelectors.any())
-                .build().apiInfo(apiInfo());
+                .build().apiInfo(this.apiInfo());
     }
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Weather diary API")
-                .description("API to use Diary with weather information of the date.")
-                .version("1.0")
-                .build();
+                .title("날씨 일기 프로젝트 :)")
+                .description("날씨 일기를 CRUD 할 수 있는 백엔드 API 입니다")
+                .version("2.0").build();
     }
 }
