@@ -66,7 +66,7 @@ class DiaryControllerTest {
         //then
         mockMvc.perform(get("/read/diaries")
                         .param("startDate", "2023-02-27")
-                        .param("endDate", "2022-07-27"))
+                        .param("endDate", "2023-02-27"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.length()").value("2"))
