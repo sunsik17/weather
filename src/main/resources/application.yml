@@ -14,7 +14,7 @@ spring:
       matching-strategy: ant_path_matcher
 
 openWeather:
-  apikey: 6d492a359c30de7a7895a7ad38017a05
+  apikey: your_api_key
   url: https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=
 
 logging:
